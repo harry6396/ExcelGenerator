@@ -56,6 +56,11 @@ public class Utility extends javax.swing.JFrame {
         jCheckBox12 = new javax.swing.JCheckBox();
         jCheckBox13 = new javax.swing.JCheckBox();
         jCheckBox15 = new javax.swing.JCheckBox();
+        jCheckBox5 = new javax.swing.JCheckBox();
+        jCheckBox9 = new javax.swing.JCheckBox();
+        jCheckBox10 = new javax.swing.JCheckBox();
+        jCheckBox11 = new javax.swing.JCheckBox();
+        jCheckBox14 = new javax.swing.JCheckBox();
         jButton1 = new javax.swing.JButton();
         jLabel13 = new javax.swing.JLabel();
         pathInput2 = new javax.swing.JTextField();
@@ -106,6 +111,21 @@ public class Utility extends javax.swing.JFrame {
 
         jCheckBox15.setText("xlsx");
 
+        jCheckBox5.setText("svg");
+        jCheckBox5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jCheckBox5ActionPerformed(evt);
+            }
+        });
+
+        jCheckBox9.setText("mp3");
+
+        jCheckBox10.setText("json");
+
+        jCheckBox11.setText("xml");
+
+        jCheckBox14.setText("etpa");
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
@@ -121,24 +141,36 @@ public class Utility extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(jCheckBox2)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jCheckBox4))
+                        .addComponent(jCheckBox4)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jCheckBox9))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addComponent(jCheckBox7)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(jCheckBox8)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jCheckBox3))
+                        .addComponent(jCheckBox3)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jCheckBox5))
                     .addComponent(jLabel3)
                     .addComponent(jLabel4)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(jCheckBox6)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jCheckBox6)
+                            .addComponent(jCheckBox14))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jCheckBox12)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jCheckBox13)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jCheckBox15)))
-                .addContainerGap(138, Short.MAX_VALUE))
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addComponent(jCheckBox11)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jCheckBox10))
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addComponent(jCheckBox12)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jCheckBox13)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(jCheckBox15)))))
+                .addContainerGap(135, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -149,7 +181,8 @@ public class Utility extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jCheckBox3)
                     .addComponent(jCheckBox7)
-                    .addComponent(jCheckBox8))
+                    .addComponent(jCheckBox8)
+                    .addComponent(jCheckBox5))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -158,7 +191,8 @@ public class Utility extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jCheckBox1)
                     .addComponent(jCheckBox2)
-                    .addComponent(jCheckBox4))
+                    .addComponent(jCheckBox4)
+                    .addComponent(jCheckBox9))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jSeparator2, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -169,6 +203,11 @@ public class Utility extends javax.swing.JFrame {
                     .addComponent(jCheckBox12)
                     .addComponent(jCheckBox13)
                     .addComponent(jCheckBox15))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jCheckBox14)
+                    .addComponent(jCheckBox11)
+                    .addComponent(jCheckBox10))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -203,18 +242,19 @@ public class Utility extends javax.swing.JFrame {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jLabel5)
-                        .addGap(18, 18, 18)
-                        .addComponent(o1, javax.swing.GroupLayout.PREFERRED_SIZE, 427, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap())
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGap(168, 168, 168))
-                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(layout.createSequentialGroup()
+                            .addComponent(jLabel5)
+                            .addGap(18, 18, 18)
+                            .addComponent(o1, javax.swing.GroupLayout.PREFERRED_SIZE, 427, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addContainerGap())
+                        .addGroup(layout.createSequentialGroup()
+                            .addGap(62, 62, 62)
                             .addComponent(jButton1)
-                            .addGap(310, 310, 310)))))
+                            .addGap(310, 310, 310)))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(28, 28, 28))))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -227,9 +267,9 @@ public class Utility extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(pathInput2, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel13))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 50, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 49, Short.MAX_VALUE)
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(34, 34, 34)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel5)
                     .addComponent(o1, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -281,6 +321,9 @@ public class Utility extends javax.swing.JFrame {
         if(jCheckBox3.isSelected()){
             selectedType+=",jpeg";
         }
+        if(jCheckBox5.isSelected()){
+            selectedType+=",svg";
+        }
         
         if(!selectedType.equals("")){
             fileName.add(selectedType);
@@ -297,6 +340,10 @@ public class Utility extends javax.swing.JFrame {
         if(jCheckBox4.isSelected()){
             selectedType+=",webm";
         }
+        if(jCheckBox9.isSelected()){
+            selectedType+=",mp3";
+        }
+        
         
         if(!selectedType.equals("")){
             fileName.add(selectedType);
@@ -316,7 +363,15 @@ public class Utility extends javax.swing.JFrame {
         if(jCheckBox15.isSelected()){
             selectedType+=",xlsx,xls";
         }
-        
+        if(jCheckBox14.isSelected()){
+            selectedType+=",etpa";
+        }
+        if(jCheckBox11.isSelected()){
+            selectedType+=",xml";
+        }
+        if(jCheckBox10.isSelected()){
+            selectedType+=",json";
+        }
         if(!selectedType.equals("")){
             fileName.add(selectedType);
             fileExtension.add("Text");
@@ -335,6 +390,10 @@ public class Utility extends javax.swing.JFrame {
             System.out.println("Unable to create an Excel file"+ex.getMessage());
         }
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jCheckBox5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox5ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jCheckBox5ActionPerformed
     class FileComparator implements Comparator<FileProperty> {
     public int compare(FileProperty o1, FileProperty o2) {
         int value1 = o1.filePath.compareTo(o2.filePath);
@@ -388,7 +447,7 @@ public class Utility extends javax.swing.JFrame {
             FileProperty fileProperty = new FileProperty();
             fileProperty.filePath = file.getPath();
             fileProperty.fileName = file.getName();
-            fileProperty.fileSize = file.length()/(1024);
+            fileProperty.fileSize = file.length();
             fileProperty.fileExtension = file.getPath().substring(i+1);
             fileProperty.fileRelativePath = file.getParentFile().toString();
             fileList.add(fileProperty);
@@ -405,6 +464,7 @@ public class Utility extends javax.swing.JFrame {
         OutputStream fileOut = new FileOutputStream(outputPath);
         Sheet []sheet1 = new Sheet[fileExtension.size()];
         // Creating Sheets using sheet object 
+        if(newFileList!=null && newFileList.size() > 0){
         for(int iFileCounter=0; iFileCounter<fileExtension.size();iFileCounter++){
         sheet1[iFileCounter] = wb.createSheet(fileExtension.get(iFileCounter));
         String filterCondition="";
@@ -458,21 +518,69 @@ public class Utility extends javax.swing.JFrame {
                 }
             }
         }
+        }
+        else{
+            for(int iFileCounter=0; iFileCounter<fileExtension.size();iFileCounter++){
+        sheet1[iFileCounter] = wb.createSheet(fileExtension.get(iFileCounter));
+        String filterCondition="";
+        switch(fileExtension.get(iFileCounter)){
+            case "Image":
+                filterCondition = fileName.get(iFileCounter);
+                break;
+            case "Video":
+                filterCondition = fileName.get(iFileCounter);
+                break;
+            case "Text":
+                filterCondition = fileName.get(iFileCounter);
+                break;
+        }
+        Row row = sheet1[iFileCounter].createRow(1); 
+        Cell cell = row.createCell(1);
+        cell.setCellValue("File Name");
+        cell = row.createCell(2); 
+        cell.setCellValue("File path");
+        cell = row.createCell(3); 
+        cell.setCellValue("File Type");
+        cell = row.createCell(4); 
+        cell.setCellValue("File size (in Bytes)");
+        
+        int rowCount=3;
+        for(int iCounter=0;iCounter<oldFileList.size();iCounter++){
+            if(filterCondition.contains(oldFileList.get(iCounter).fileExtension)){
+            row = sheet1[iFileCounter].createRow(rowCount);
+            Cell cell1 = row.createCell(1);
+            cell1.setCellValue(oldFileList.get(iCounter).fileName);
+            cell1 = row.createCell(2);
+            cell1.setCellValue(oldFileList.get(iCounter).filePath);
+            cell1 = row.createCell(3);
+            cell1.setCellValue(oldFileList.get(iCounter).fileExtension);
+            cell1 = row.createCell(4);
+            cell1.setCellValue(oldFileList.get(iCounter).fileSize);
+            rowCount++;
+                }
+            }
+        }
+        }
         wb.write(fileOut); 
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
     private javax.swing.JCheckBox jCheckBox1;
+    private javax.swing.JCheckBox jCheckBox10;
+    private javax.swing.JCheckBox jCheckBox11;
     private javax.swing.JCheckBox jCheckBox12;
     private javax.swing.JCheckBox jCheckBox13;
+    private javax.swing.JCheckBox jCheckBox14;
     private javax.swing.JCheckBox jCheckBox15;
     private javax.swing.JCheckBox jCheckBox2;
     private javax.swing.JCheckBox jCheckBox3;
     private javax.swing.JCheckBox jCheckBox4;
+    private javax.swing.JCheckBox jCheckBox5;
     private javax.swing.JCheckBox jCheckBox6;
     private javax.swing.JCheckBox jCheckBox7;
     private javax.swing.JCheckBox jCheckBox8;
+    private javax.swing.JCheckBox jCheckBox9;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel2;

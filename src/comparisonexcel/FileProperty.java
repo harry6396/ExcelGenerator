@@ -21,9 +21,9 @@ public class FileProperty {
 
 class FileData{
      public static String[] uiElement = new String[]{"File"};
-     public static String[] imageFileExtension = new String[]{"png","jpeg","jpg","tif","gif"};
-     public static String[] videoFileExtension = new String[]{"mp4", "m4a", "3gp","webm","flv"};
-     public static String[] textFileExtension = new String[]{"txt","doc","pdf","tsv"};
+     public static String[] imageFileExtension = new String[]{"png","jpeg","jpg","tif","gif","svg"};
+     public static String[] videoFileExtension = new String[]{"mp4", "m4a", "3gp","webm","flv","mp3"};
+     public static String[] textFileExtension = new String[]{"txt","doc","pdf","tsv","json","xml","etpa"};
      public static String[] mediaType = new String[]{"Image","Audio","Video","Text file"};
      public static String[] map = new String[]{"png,jpeg,jpg,tif,gif","mp4,m4a,3gp,webm,flv","txt,doc,pdf,tsv"};
 }
